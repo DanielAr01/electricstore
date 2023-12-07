@@ -1,0 +1,35 @@
+.container{
+display: grid;
+grid-template-columns: 10% 1fr 1fr;
+grid-template-rows: 200px 1fr 40px;
+min-height: 100vh;
+grid-template-areas: 
+"aside header header"
+"aside main main"
+"footer footer footer";
+}
+.container header{background-color:aqua;
+    grid-area:header;
+}
+.container aside{
+    background-color: blue;
+    grid-area:aside;
+    
+}
+.container main{
+    background-color:chartreuse;
+    grid-area:main;
+    
+}
+.container footer{background-color: brown;
+    grid-area:footer;
+}
+body{margin:0}
+.filtros {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    }
+    .filtros div {
+    margin-bottom: 30px;
+    }    
